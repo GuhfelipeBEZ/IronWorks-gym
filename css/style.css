@@ -1,14 +1,14 @@
-/* :root{
-    --primary-color: #010812;
-    --primary-bg-color: #84847C;
-    --secundary-bg-color: #F2EDDC;
-    --primary-boder-color:#BAC3BE;
-    --secundary-border-color:#383F49;
+:root{
+    --menu-lateral: #010812;
 
+    --fundo-claro1: #F2EDDC;
+    --fundo-claro2:#BAC3BE;
 
-    --title-color:#ffffff;
-    --text-color:#796cc4;
-    --link-color:#3f3d3c;
-    --icon-color:#f9f9f9;
+    --texto-escuro: #84847C;
+    --texto-claro:#383f49;
 
-} */
+    --texto-titulo-fundo: rgb(255, 166, 0);
+} 
+body{
+    background: var(--fundo-claro2);
+}
