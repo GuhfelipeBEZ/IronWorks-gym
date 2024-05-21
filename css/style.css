@@ -156,3 +156,26 @@ h1, h2, h3, h4, h5, h6 {
 .nav-menu li:hover>a i{
     color: var(--text-detalhes); 
 }
+/* menu mobile */
+.mobile-nav-toggle {
+    position: fixed;
+    right: 15px;
+    top: 15px;
+    z-index: 9999;
+    border: 0;
+    font-size: 26px;
+    transition: all 0.4s;
+    background: var(--text-detalhes);
+    color: var(--texto-claro);
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    display: inline-flex;
+    cursor: pointer;
+}
+.mobile-nav-active {
+    overflow: hidden;
+}
+.mobile-nav-active #header{
+    left: 0;
+}
