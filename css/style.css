@@ -12,6 +12,8 @@
     --texto-claro:#383f49;
     --texto-hover: #ff9100;
 
+    --text-detalhes:#00e1ff;
+
     --texto-titulo-fundo: rgb(255, 166, 0);
 } 
 /* css geral */
@@ -79,15 +81,78 @@ h1, h2, h3, h4, h5, h6 {
     transition: 0.3s;
     box-shadow: 0px 0px 5px 0px var(--fundo-claro1); 
 }
-.perfil .social-links a:hover,
+#header .perfil .social-links a:hover,
 .social-links i:hover {
     font-size: 18px;
     display: inline-block;
     background: var(--texto-hover);
     color: #0cd9e7;
-    margin-right: 10px;
     border-radius: 50%;
-    width: 35px;
-    height: 35px;
-    box-shadow: 0px 0px 5px 0px var(--fundo-claro1); 
+}
+
+/* ajuste para o corpo principal */
+
+#main {
+    margin-left: 300px; 
+}
+.container,
+.container-fluid {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+@media (max-width: 1199px) {
+    #header {
+        left: -300px;
+
+    }
+    #main {
+        margin-left: 0;
+
+    }
+    .container,
+    .container-fluid {
+    padding-left: 12px;
+    padding-right: 12px;
+    }
+}
+/* menu desktop */
+.nav-menu {
+    padding: 35px 0 0;
+}
+.nav-menu * { /* aplicar a regra aos filhos */
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.nav-menu>ul>li { /*revisão*/
+    position: relative;
+    white-space: nowrap;
+}
+.nav-menu a,
+.nav-menu:focus {
+    display: flex;
+    align-items: center;
+    color: var(--fundo-claro2);
+    padding: 12px 15px;
+    margin-bottom: 8px;
+    transition: 0.3;
+    font-size: 15px;
+}
+.nav-menu a i,
+.nav-menu a:focus {
+    font-size: 14px;
+    padding-right: 10px;
+}
+.nav-menu a:hover,
+.nav-menu .active,
+.nav-menu .active:focus,
+.nav-menu li:hover>a {
+    text-decoration: none;
+    color: var(--fundo-claro1);
+}
+.nav-menu a:hover i,
+.nav-menu .active i,
+.nav-menu .active:focus,
+.nav-menu li:hover>a i{
+    color: var(--text-detalhes); 
 }
