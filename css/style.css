@@ -342,3 +342,33 @@ section {
     margin: 0 0 0 60px;
     font-family: "Open", sans-serif;
 }
+/* skills // habilidades // vendas */
+.skills .progress {
+  height: 60px;
+  display: block;
+  background: none;
+  border-radius: 0;
+
+}
+.skills .progress .skill {
+    padding: 0;
+    margin: 0 0 6px 0;
+    text-transform: uppercase;
+    display: block;
+    font-size: 600;
+    /* se quiser pode colocar o color aqui */
+}
+.skills .progress .skill .val {
+    float: right;
+    font-style: normal;
+}
+.skills .progress-bar-bg {
+    background: var(--fundo-claro1);
+    height: 10px;
+}
+.skills .progress-bar {
+    width: 1px;
+    height: 10px;
+    transition: 2s;
+    background: var(--text-detalhes);
+}
