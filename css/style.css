@@ -6,7 +6,7 @@
     --fundo-claro2:#BAC3BE;
 
     --borda-clara: #84847C;
-    --borda-escura: #383f49; ;
+    --borda-escura: #383f49; 
 
     --texto-escuro: #84847C;
     --texto-claro:#303842;
@@ -498,4 +498,34 @@ section {
 .portfolio .portfolio-wrap:hover .portfolio-links {
     opacity: 1;
     bottom: 0;
+}
+/* portfolio detalhes */
+
+.services .icon-box {
+    margin-bottom: 20px;
+}
+.services .icon {
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 54px;
+    height: 54px;
+    background: var(--borda-escura);
+    color: var(--text-detalhes);
+    border-radius: 50%;
+    transition: 0.5;
+    border: 5px solid var(--texto-hover);
+}
+.services .icon i {
+    color: var(--texto-branco);
+    font-size: 24px;
+    line-height: 0;
+}
+.services .icon-box:hover .icon {
+    background: var(--texto-hover);
+    transition: ease-in-out 0.3s;
+}
+.services .icon-box:hover .icon i {
+    color: var(--text-detalhes);
 }
