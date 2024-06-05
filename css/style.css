@@ -529,3 +529,15 @@ section {
 .services .icon-box:hover .icon i {
     color: var(--text-detalhes);
 }
+.services .title {
+    margin-left: 80px;
+    margin-bottom: 20px;
+    font-weight: 200;
+    font-size: 40px;
+
+}
+.services .description {
+    margin-left: 80px;
+    line-height: 24px;
+    font-size: 18px;
+}
