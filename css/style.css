@@ -592,7 +592,7 @@ section {
     position: relative;
     color: var(--menu-lateral);
     border-radius: 500px;
-    box-shadow: 0 2px 15px rgba(rgb(2, 25, 55), green, blue, alpha)
+    box-shadow: 0 2px 15px rgba(0,0,0,0.2 );
 }
 .depoimentos .depoimento-item p::after {
     content: "";
@@ -604,4 +604,18 @@ section {
     border-top: 20px solid var(--fundo-claro2);
     border-right: 20px solid transparent;
     border-left: 20px solid transparent;
+}
+.depoimentos .swiper-pagination {
+    margin-top: 20px;
+    position: relative;
+}
+.depoimentos.swiper-pagination .swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+}
+.depoimentos .swiper-pagination .swiper-pagination-bullet-active {
+    background-color: var(--texto-hover);
+}
+.depoimentos .swiper-pagination .swiper-pagination-bullet:hover {
+    background: var(--text-detalhes);
 }
