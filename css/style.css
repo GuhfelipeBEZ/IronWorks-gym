@@ -73,7 +73,7 @@ h1, h2, h3, h4, h5, h6 {
     transition: all ease-in-out 0.5s;
     z-index: 99; /* tirar o auro depois */
     padding: 0 15px;
-    background: var(--texto-escuro);
+    background: var(--menu-lateral);
     overflow-y: auto;
 }
 
@@ -115,7 +115,7 @@ h1, h2, h3, h4, h5, h6 {
 .social-links i:hover {
     font-size: 18px;
     display: inline-block;
-    background: var(--texto-hover);
+    background: var(--);/* deixar vazio ou arrumar depois  */
     color: #0cd9e7;
     border-radius: 50%;
 }
@@ -511,11 +511,11 @@ section {
     justify-content: center;
     width: 54px;
     height: 54px;
-    background: var(--borda-escura);
-    color: var(--text-detalhes);
+    background: var(--menu-lateral);
+    color: var(--text-detlhes);
     border-radius: 50%;
     transition: 0.5;
-    border: 5px solid var(--texto-hover);
+    border: 2px solid var(--texto-branco);
 }
 .services .icon i {
     color: var(--text-detalhes);
@@ -523,7 +523,7 @@ section {
     line-height: 0;
 }
 .services .icon-box:hover .icon {
-    background: var(--texto-hover);
+    background: var(--);/* adicionar alguma cro caso nescessaario  */
     transition: ease-in-out 0.3s;
 }
 .services .icon-box:hover .icon i {
@@ -618,4 +618,43 @@ section {
 }
 .depoimentos .swiper-pagination .swiper-pagination-bullet:hover {
     background: var(--text-detalhes);
+}
+/* CONTATO */
+.contato {
+    padding-bottom: 130px;
+}
+.contato .info {
+    padding: 30px;
+    background: var(--borda-escura);/* colocare branco dps */
+    width: 96%;
+    box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
+}
+.contato .info i {
+     font-size: 20px;
+     color: var(--texto-branco);
+     float: left;
+     width: 44px;
+     height: 44px;
+     background: var(--menu-lateral);
+     border-radius: 50%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     transition: all 0.3s ease-in-out;
+}
+.contato .info h4 {
+    padding: 0 0 0 60px;
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 5px;
+  /* color opcional */
+}
+.contato .info p {
+    padding: 0 0 10px 60px;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+.contato .info i:hover {
+    background: var(--menu-lateral);
+    color: var(--text-detalhes);
 }
