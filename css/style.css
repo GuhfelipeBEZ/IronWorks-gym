@@ -658,3 +658,75 @@ section {
     background: var(--menu-lateral);
     color: var(--text-detalhes);
 }
+.contato .email-form {
+    width: 100%;
+    padding: 30px;
+    background: var(--borda-escura);
+    box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
+}
+.contato .email-form .form-grupo {
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+    /* volta aqui */
+}
+.contato .email-form label {
+    padding-top: 30px;
+    padding-bottom: 5px;
+    font-size: 18px;
+    color: var(--texto-branco);
+}
+.contato .email-form input,
+.contato.email-form textarea {
+    box-shadow:  0 0 24px 0 rgb(0, 0, 0, 0.50);
+}
+.contato.email-form textarea{
+
+}
+.contato .email-form input {
+    height: 50;
+}
+.contato .email-form button[type=submit] {
+    background: #00e1ff;
+    border: 0;
+    padding: 10px 24px;
+    color: var(--menu-lateral);
+    border-radius: 4px;
+    margin-top: 5%;
+    
+}
+.contato .email-form button[type=submit]:hover {
+    background: var(--menu-lateral);
+    color: var(--texto-branco);
+}
+/* roda pé */
+
+#footer {
+    padding: px;
+    color: var(--texto-branco);
+    font-size: 16px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    z-index: 9999;
+    background: var(--borda-clara);
+    width: 300px;
+}
+#footer .copyrigth {
+    text-align: center;
+}
+#footer .creditos {
+    padding: 5px;
+    text-align: center;
+    font-size: 13px;
+    color: var(--menu-lateral);
+}
+#footer .creditos a:hover {
+    color: var(--text-detalhes);
+}
+@media (max-width: 1199px) {
+    #footer {
+        position: static;
+        width: auto;
+        padding-right: 20px 15px;
+    }
+}
