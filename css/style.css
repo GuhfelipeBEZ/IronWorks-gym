@@ -1,6 +1,7 @@
 /* variavel para as cores  */
 :root{
     --menu-lateral: #010812;
+    --color-footer:  #001d4693;
 
     --fundo-claro1: #F2EDDC;
     --fundo-claro2:#BAC3BE;
@@ -679,9 +680,9 @@ section {
 .contato.email-form textarea {
     box-shadow:  0 0 24px 0 rgb(0, 0, 0, 0.50);
 }
-.contato.email-form textarea{
+/* .contato.email-form textarea{
 
-}
+} */
 .contato .email-form input {
     height: 50;
 }
@@ -708,7 +709,7 @@ section {
     left: 0;
     bottom: 0;
     z-index: 9999;
-    background: var(--borda-clara);
+    background: var(--color-footer);
     width: 300px;
 }
 #footer .copyrigth {
@@ -718,7 +719,7 @@ section {
     padding: 5px;
     text-align: center;
     font-size: 13px;
-    color: var(--menu-lateral);
+    color: var(--texto-branco);
 }
 #footer .creditos a:hover {
     color: var(--text-detalhes);
@@ -729,4 +730,7 @@ section {
         width: auto;
         padding-right: 20px 15px;
     }
+}
+#footer .creditos a {
+   color: var(--fundo-claro1);
 }
