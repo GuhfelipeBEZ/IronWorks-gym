@@ -744,9 +744,8 @@ section {
     color: var(--texto-branco);
 }
 /* roda pé */
-
 #footer {
-    padding: px;
+    padding: 15px;
     color: var(--texto-branco);
     font-size: 16px;
     position: fixed;
@@ -756,18 +755,26 @@ section {
     background: var(--color-footer);
     width: 300px;
 }
-#footer .copyrigth {
+
+#footer .copyright {
     text-align: center;
 }
+
 #footer .creditos {
-    padding: 5px;
+    padding-top: 5px;
     text-align: center;
     font-size: 13px;
     color: var(--texto-branco);
 }
+
+#footer .creditos a {
+    color: var(--cor-detalhes);
+}
+
 #footer .creditos a:hover {
     color: var(--text-detalhes);
 }
+
 @media (max-width: 1199px) {
     #footer {
         position: static;
@@ -775,11 +782,52 @@ section {
         padding-right: 20px 15px;
     }
 }
-#footer .creditos a {
-   color: var(--fundo-claro1);
+
+
+/* portfolio adicional // Pagina dos Produtos */
+.breadcrumbs {
+    padding: 20px 0;
+    background: var(--texto-escuro);
 }
 
+.breadcrumbs h2 {
+    font-size: 26px;
+    font-weight: 300;
+}
 
+.breadcrumbs ol {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 15px;
+}
+
+.breadcrumbs ol li {
+    padding-left: 10px;
+}
+
+.breadcrumbs ol li+li::before {
+    content: "/";
+    display: inline-block;
+    padding-right: 10px;
+    color: var(--texto-branco);
+}
+
+@media (max-width: 768px) {
+    .breadcrumbs .d-flex {
+        display: block !important;
+    }
+
+    .breadcrumbs ol {
+        display: block;
+    }
+
+    .breadcrumbs ol li {
+        display: inline-block;
+    }
+}
 .portfolio-detalhes {
     padding-top: 40px;
 
@@ -830,4 +878,12 @@ section {
 }
 .portfolio-detalhes .portfolio-description p{
     padding: 0;
+}
+/* fazendo coisas */
+.breadcrumbs ol li a{
+    padding-left: 10px;
+    color: var(--texto-branco);
+}
+.breadcrumbs ol li:hover a{
+    color: var(--menu-lateral);
 }
